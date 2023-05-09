@@ -17,12 +17,21 @@
     src: url(./fonts/Cardo-Bold.ttf);
     font-weight: "Bold";
 }
+
+/* GLOBAL */
+a {
+    text-decoration: none;
+}
 /* BODY */
 body{
     background-image: url(./assets/images/fondo-body.png);
     font-family: 'Cardo';
 }
 /* HEADER */
+header {
+    display: flex;
+}
+
 .titulo{
     background-color: rgba(120, 0, 0, 0.8);
     font-size: 30px;
@@ -37,7 +46,9 @@ body{
     color: #669BBC;
 }
 .nav-container {
-    /* display: grid; */
+    display: none;
+    width: 100%;
+    text-align: center;
     background-color: rgba(120, 0, 0, 0.8);
 }
 header nav ul{
@@ -105,7 +116,7 @@ header nav ul li a:hover{
     color: #669BBC;
 }
 .info-nos{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     margin-top: 70px;
@@ -361,3 +372,26 @@ form input{
 } */
 /* FOOTER POEMAS */
 
+@media (min-width:600px) {
+    .nav-container {
+        display: flex;
+        
+    }
+    .info-nos {
+        display: flex;
+        
+    }
+}
+
+/* @media (min-width:768px) {
+    header {
+        display: block;
+    }
+    .nav-container {
+        display: flex;
+    }
+}
+
+@media (min-width:920px) {
+
+} */
